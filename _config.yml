@@ -1,3 +1,19 @@
 theme: jekyll-theme-minimal
 title: O. Luca Sharp
-description: Bookmark this to keep an eye on my project updates!
+email: olucasharp@gmail.com
+baseurl: "" # the subpath of your site, e.g. /blog/
+url:  # the base hostname & protocol for your site
+description: Reliable and curious data scientist with over 10 years of transferable experience in communications, business development, scientific research and analytics. Dealt with analysis of data of different sorts at all stages of my career. Passionate about good stories that numbers can tell to move the business fast forward and make this a world better place. 
+
+
+# Resume social links
+# uncomment the options you wish to display, and add your own URL
+resume_social_links:
+  resume_github_url:            "https://github.com/lucaostra"
+  
+
+  resume_linkedin_url:          "https://www.linkedin.com/in/jiaming-shen-08186710a/"
+
+  resume_website_url:           "olucasharp.github.io"
+
+resume_theme:                   default
