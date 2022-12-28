@@ -10,4 +10,9 @@ Template URL: https://bootstrapmade.com/devfolio-bootstrap-portfolio-html-templa
 Author: BootstrapMade.com
 License: https://bootstrapmade.com/license/
 
-Also in this template I've used the Particles JS project, by https://vincentgarreau.com/particles.js/
+Particles JS project, by https://vincentgarreau.com/particles.js/
+
+NASA - Moon picture
+Published on November 8, 2015
+Free to use under the Unsplash License
+Source: https://unsplash.com/photos/pd4lo70LdbI
