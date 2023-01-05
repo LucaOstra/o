@@ -1,0 +1,18 @@
+Hi, I am Luca.
+
+I am interested in Data Science and its applications in the domain of social sciences and socially responsible proects.
+
+**Tech Stack **
+🐍: pandas, numpy, VIZ: matplotlib, seaborn, plotly, folium, ML: sklearn, tensorflow; WebApp: Flask 
+R
+SQL
+HTML, CSS
+Git, Github
+Linux (basic)
+
+☎️ Contacts
+Telegram: @lucaostra
+E-mail: olucasharp@gmail.com
+Wrbsite: https://lucaostra.github.io/o/
+
+📜 My certificates
