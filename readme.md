@@ -1,6 +1,6 @@
 Hi, I am Luca.
 
-I am interested in Data Science and its applications in the domain of social sciences and socially responsible proects.
+I am interested in Data Science and its applications in the domain of social sciences and socially responsible proects. Currently I am working in MIPT in Marketing domain.
 
 **Tech Stack**
 * 🐍: pandas, numpy, VIZ: matplotlib, seaborn, plotly, folium, ML: sklearn, tensorflow; WebApp: Flask 
@@ -10,7 +10,7 @@ I am interested in Data Science and its applications in the domain of social sci
 * Git, Github
 * Linux (basic)
 
-☎️ Contacts
+☎️ **Contacts**
 * Telegram: @lucaostra
 * Email: olucasharp@gmail.com
 * Website: https://lucaostra.github.io/o/
