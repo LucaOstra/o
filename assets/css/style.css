@@ -1,11 +1,6 @@
 /**
-* Template Name: DevFolio - v4.9.1
 * Template URL: https://bootstrapmade.com/devfolio-bootstrap-portfolio-html-template/
-* Author: BootstrapMade.com
 * License: https://bootstrapmade.com/license/
-*/
-
-/*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
 
@@ -24,8 +19,7 @@ html{
 # Particles
 --------------------------------------------------------------*/
 #bg {
-  /*--------выходит, что у меня два цвета накладываются друг на друга
-  если убрать position absolute - фон серый по умолчанию 
+  /*
   --------------------------------------------------------------*/
   position: absolute;
   top: 0;
@@ -324,7 +318,7 @@ a:hover {
   width: 40px;
   font-size: 1.2rem;
   border-radius: 50%;
-  line-height: 1.75;
+  line-height: 2;
   margin: 0 15px 0 0;
   border-color: #1e1e1e;
   box-shadow: 0 0 0 3px #e1e1e1;
@@ -334,7 +328,7 @@ a:hover {
 }
 
 .socials .ico-circle:hover {
-  background-color: #88754e;
+  background-color: Dark Purple;  #hover over color
   color: #fff;
 
   transition: all 500ms ease;
