@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXJ0E17PBY"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXJ0E17PBY');
+  </script>
+
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Luca Sharp - Academic Research</title>
+
+  <meta name="description" content="Welcome to Luca Sharp website">
+  <meta name="keywords" content="Dataanalytics,Datascience,Artificialrelations,Machinelearning,AI,ML,Socialgood,Aiforsocialgood,Socialdesign,Publicrelations,Data,Dataviz,Datavisualization,ML,Python,Content,Meaning,NeuralNetworks,Classification,Regression,NLP">
+  <meta name="author" content="Olga Luca Sharp">
+
+  <!-- Favicons -->
+  <link rel="icon" href="assets/img/logo.png">
+  <link href="assets/img/logomin.png" rel="icon">
+  <link href="assets/img/logo.png" rel="apple-touch-icon">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <style>
+    /* Custom CSS for Academic Publications Page with Dark Theme */
+    .publications-page {
+      background-color: #000000;
+      color: #e0e0e0;
+      padding: 60px 0;
+    }
+
+    .publications-header {
+      text-align: center;
+      margin-bottom: 50px;
+      padding: 0 20px;
+    }
+
+    .publications-header h1 {
+      color: #fff;
+      font-weight: 700;
+      margin-bottom: 20px;
+      font-size: 2.2rem;
+      border-bottom: 2px solid maroon;
+      display: inline-block;
+      padding-bottom: 10px;
+    }
+
+    .publications-header p {
+      color: #ccc;
+      font-size: 1.1rem;
+      line-height: 1.6;
+      max-width: 800px;
+      margin: 0 auto 20px;
+    }
+
+    .mentor-credit {
+      font-style: italic;
+      color: #aaa;
+      font-size: 0.95rem;
+    }
+
+    .publication-card {
+      background-color: #1e1e1e;
+      border-radius: 8px;
+      padding: 25px;
+      margin-bottom: 30px;
+      border: 1px solid #333;
+      transition: all 0.3s ease;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .publication-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 4px;
+      height: 100%;
+      background-color: #e1e1e1;
+    }
+
+    .publication-card:hover {
+      background-color: #252525;
+      transform: translateY(-3px);
+      box-shadow: 0 5px 15px rgba(139, 69, 19, 0.3);
+    }
+
+    .publication-title {
+      color: #fff;
+      font-weight: 600;
+      margin-bottom: 10px;
+      font-size: 1.2rem;
+    }
+
+    .publication-journal {
+      color: #f1f1ff;
+      font-weight: 500;
+      margin-bottom: 10px;
+      font-size: 1rem;
+    }
+
+    .publication-year {
+      color: #aaa;
+      font-size: 0.9rem;
+      margin-bottom: 15px;
+    }
+
+    .publication-description {
+      color: #ddd;
+      line-height: 1.6;
+      margin-bottom: 15px;
+    }
+
+    .publication-link {
+      display: inline-flex;
+      align-items: center;
+      color: #f1f1f1;
+      text-decoration: none;
+      font-weight: 500;
+      transition: all 0.3s ease;
+      border: 1px solid #f1f1f1;
+      padding: 8px 15px;
+      border-radius: 4px;
+      background-color: transparent;
+    }
+
+    .publication-link:hover {
+      color: #fff;
+      background-color: maroon;
+      text-decoration: none;
+    }
+
+    .publication-link i {
+      margin-left: 8px;
+      font-size: 0.9rem;
+    }
+
+    .publications-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+      gap: 30px;
+      margin-top: 40px;
+    }
+
+    @media (max-width: 768px) {
+      .publications-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top">
+    <div class="container d-flex align-items-center justify-content-between">
+      <h1 class="logo"><a href="index.html">Luca<strong>-o-</strong>Sharp</a></h1>
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link" href="index.html">Home</a></li>
+          <li><a class="nav-link" href="index.html#resume">Resume</a></li>
+          <li><a class="nav-link scrollto" href="portfolio-details.html">Portfolio</a></li>
+          <li><a class="nav-link" href="academic.html">Academic research</a></li>
+          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <div class="hero hero-single route bg-image" style="background-image: url(assets/img/nasa_moon.jpg)">
+    <div class="hero-content display-table">
+      <div class="table-cell">
+        <div class="container"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ======= Academic Publications Section ======= -->
+  <main id="main">
+    <section class="publications-page">
+      <div class="container">
+        <h4 class="title-a" style="color: #3a3a3a;">Academic Publications</h4>
+        <div class="publications-header">
+          <h4 style="text-align: left">
+            My academic work focuses on socially responsible design, exploring how design thinking and disruptive technologies can address complex social challenges and improve community well-being.
+          </h4> 
+           <!--<h6 style="text-align: left">
+            Many of these publications were developed with the guidance of my PhD mentor, Professor Uliana Aristova, and in collaboration with colleagues from the Design School at Higher School of Economics.
+          </h6>-->
+        </div>
+
+        <div class="publications-grid">
+          <!-- Publication 1 -->
+          <div class="publication-card">
+            <h3 class="publication-title">Social Design as a Tool of Life-Construction Practice</h3>
+            <div class="publication-journal">Articult Journal</div>
+            <div class="publication-year">2020</div>
+            <p class="publication-description">
+              This paper explores how social design methodologies can be applied to life-construction practices, helping individuals and communities build more meaningful and sustainable lifestyles through participatory design approaches.
+            </p>
+            <a href="https://cyberleninka.ru/article/n/sotsialnyy-dizayn-kak-instrument-praktiki-zhiznestroitelstva" class="publication-link" target="_blank">
+              Read Publication
+              <i class="bi bi-box-arrow-up-right"></i>
+            </a>
+          </div>
+
+          <!-- Publication 2 -->
+          <div class="publication-card">
+            <h3 class="publication-title">New Rules and Standards: Social Design in a Crisis</h3>
+            <div class="publication-journal">L'Abitare Sospeso Conference Proceedings</div>
+            <div class="publication-year">2020, Milano, Italy</div>
+            <p class="publication-description">
+              Examines how social design principles can be adapted to address the unique challenges presented by crisis situations, with a focus on the COVID-19 pandemic and its impact on urban living and community resilience.
+            </p>
+            <a href="https://flore.unifi.it/retrieve/handle/2158/1236053/594604/-AS-%20L%27abitare%20Sospeso%20-%20Stefano%20Follesa%20e%20Francesco%20Armato_compressed%20%281%29.pdf" class="publication-link" target="_blank">
+              Read Publication
+              <i class="bi bi-box-arrow-up-right"></i>
+            </a>
+          </div>
+
+          <!-- Publication 3 -->
+          <div class="publication-card">
+            <h3 class="publication-title">Systems Thinking: The New Stage in Social Design Theory and Practice</h3>
+            <div class="publication-journal">Systems Administrator Journal</div>
+            <div class="publication-year">2018</div>
+            <p class="publication-description">
+              Investigates the integration of systems thinking into social design practices, demonstrating how this holistic approach can lead to more effective and sustainable solutions for complex social problems.
+            </p>
+            <a href="https://www.elibrary.ru/item.asp?id=35582529" class="publication-link" target="_blank">
+              Read Publication
+              <i class="bi bi-box-arrow-up-right"></i>
+            </a>
+          </div>
+
+          <!-- Publication 4 -->
+          <div class="publication-card">
+            <h3 class="publication-title">Theory and Practice of Collaborative Innovations' Design</h3>
+            <div class="publication-journal">Systems Administrator Journal</div>
+            <div class="publication-year">2018</div>
+            <p class="publication-description">
+              Explores methodologies for designing collaborative innovation processes, with case studies demonstrating how participatory design can foster creativity and problem-solving in diverse organizational contexts.
+            </p>
+            <a href="https://samag.ru/archive/article/3677" class="publication-link" target="_blank">
+              Read Publication
+              <i class="bi bi-box-arrow-up-right"></i>
+            </a>
+          </div>
+
+          <!-- Publication 5 -->
+          <div class="publication-card">
+            <h3 class="publication-title">Human-Centered Approach in ICT Design</h3>
+            <div class="publication-journal">Systems Administrator Journal</div>
+            <div class="publication-year">2017</div>
+            <p class="publication-description">
+              Examines the principles and practices of human-centered design in the development of information and communication technologies, emphasizing the importance of user needs and experiences in creating effective digital solutions.
+            </p>
+            <a href="https://samag.ru/archive/article/3489" class="publication-link" target="_blank">
+              Read Publication
+              <i class="bi bi-box-arrow-up-right"></i>
+            </a>
+          </div>
+
+          <!-- Publication 6 -->
+          <div class="publication-card">
+            <h3 class="publication-title">Social Capital and Economic Behavior</h3>
+            <div class="publication-journal">Journal of Economic Studies</div>
+            <div class="publication-year">2012</div>
+            <p class="publication-description">
+              Investigates the relationship between social capital and economic attitudes among Russian ethnic groups, revealing how social networks and trust influence economic decision-making and behavior.
+            </p>
+            <a href="https://www.gramota.net/articles/issn_1993-5552_2012_7_50.pdf" class="publication-link" target="_blank">
+              Read Publication
+              <i class="bi bi-box-arrow-up-right"></i>
+            </a>
+          </div>
+
+          <!-- Publication 7 -->
+          <div class="publication-card">
+            <h3 class="publication-title">Social Capital and Economic Attitudes</h3>
+            <div class="publication-journal">Journal of Social Sciences</div>
+            <div class="publication-year">2012</div>
+            <p class="publication-description">
+              Analyzes the correlation between social capital and economic attitudes, exploring how different forms of social capital affect economic representations and behavior patterns.
+            </p>
+            <a href="https://web.snauka.ru/issues/2012/04/11741" class="publication-link" target="_blank">
+              Read Publication
+              <i class="bi bi-box-arrow-up-right"></i>
+            </a>
+          </div>
+
+          <!-- Publication 8 -->
+          <div class="publication-card">
+            <h3 class="publication-title">Social Capital and Public Policy</h3>
+            <div class="publication-journal">Journal of Public Administration</div>
+            <div class="publication-year">2011</div>
+            <p class="publication-description">
+              Examines the role of social capital in shaping public policies, with a focus on how trust and social networks can be leveraged to improve policy outcomes and community engagement.
+            </p>
+            <a href="https://www.elibrary.ru/item.asp?id=22103292" class="publication-link" target="_blank">
+              Read Publication
+              <i class="bi bi-box-arrow-up-right"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
