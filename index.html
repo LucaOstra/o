@@ -1,455 +1,257 @@
-  <!-- =======================================================
-  
-  * Template URL: https://bootstrapmade.com/devfolio-bootstrap-portfolio-html-template/
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
-
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXJ0E17PBY"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-XXJ0E17PBY');
-</script>
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXJ0E17PBY"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXJ0E17PBY');
+  </script>
 
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Olga Sharp | CV & Portfolio </title>
- 
-  <meta name="description"
-    content="Welcome to Luca Sharp website">
-  <meta name="keywords"
-    content="Marketing, Growth, PR, communications, content, bloggers, influencer marketing, UGC, content-factory, performance marketing, EdTech, VC, startups, B2B, enterprenership, Data analytics, Data science, Artificial intelligence, Machine learning, AI, ML, Social good, AI for social good, Social design,
-             relations, Data, Dataviz, Data visualization, Python">
-  <meta name="author" content="Olga L Sharp">
-  <link rel="icon" href="assets/img/logo.png">
-
-
-  <!-- Logos-->
+  <title>Olga Sharp | Marketing & Growth Leader</title>
+  <meta name="description" content="Olga Sharp - Marketing & Communications Leader. 12+ years in strategic communications, PR, and marketing.">
+  <meta name="keywords" content="Marketing, Growth, PR, Communications, Influencer Marketing, Performance Marketing, B2B, EdTech, VC, Startups, Data Analytics, AI, Machine Learning">
+  <meta name="author" content="Olga Sharp">
+  
+  <!-- Favicons -->
   <link href="assets/img/logomin.png" rel="icon">
   <link href="assets/img/logo.png" rel="apple-touch-icon">
 
-  <!-- Vendor CSS Files -->
+  <!-- Vendor CSS -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
-  <!-- Template Main CSS File -->
+  <!-- Main CSS -->
   <link href="assets/css/style.css" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="css/main.css">
-
-</head>
-
-<body>
   
-<!-- ======= particles part=======->
-        
-  <!======= Header ======= -->
+  <style>
+    /* Ensure particles canvas covers hero area properly */
+    #bg {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 0;
+    }
+    .hero {
+      position: relative;
+      overflow: hidden;
+    }
+    .hero .hero-content {
+      position: relative;
+      z-index: 2;
+    }
+    
+    /* About section - SANS SERIF */
+    #about,
+    #about .about-me,
+    #about .title-a,
+    #about p,
+    #about .content p,
+    #about .content a {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif !important;
+    }
+    
+    /* Core Expertise section - SANS SERIF */
+    #resume,
+    #resume .resume-title,
+    #resume .resume-item,
+    #resume .resume-item ul,
+    #resume .resume-item li,
+    #resume .resume-item strong {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif !important;
+    }
+    
+    /* Button styling - Dark grey background, maroon on hover */
+    .btn-portfolio {
+      display: inline-block;
+      background: #3a3a3a;
+      color: #ffffff;
+      padding: 8px 24px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: 500;
+      transition: all 0.3s ease;
+      border: none;
+      font-family: 'Courier New', Courier, monospace !important;
+      cursor: pointer;
+    }
+    
+    .btn-portfolio:hover {
+      background: maroon;
+      color: #ffffff;
+      text-decoration: none;
+      transform: translateY(-2px);
+    }
+    
+    /* Keep other buttons with monospace */
+    .portfolio-button-light {
+      font-family: 'Courier New', Courier, monospace !important;
+    }
+    
+    /* Contact section text colors */
+    .contact-mf .more-info p,
+    .contact-mf .list-ico,
+    .contact-mf .list-ico li,
+    .contact-mf .list-ico li span,
+    .contact-mf .list-ico li a {
+      color: #e1e1e1 !important;
+    }
+    
+    /* About section link color */
+    #about .content a {
+      color: #e1e1e1 !important;
+    }
+    
+    #about .content a:hover {
+      color: maroon !important;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
   <header id="header" class="fixed-top">
-
     <div class="container d-flex align-items-center justify-content-between">     
-
       <h1 class="logo"><a href="index.html">Luca<strong>-o-</strong>Sharp</a></h1>
-
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
-          <li><a class="nav-link scrollto" href="#resume">Resume</a></li>          
+          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>    
           <li><a class="nav-link scrollto" href="portfolio-details.html">Portfolio</a></li>
           <li><a class="nav-link scrollto" href="academic.html">Research insights</a></li>
           <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
-      </ul>
-
-
+        </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
-   
-   </div>
-  </header><!-- End Header -->
-
-  <!-- ======= Hero Section ======= -->
-
-
-<div id="bg" ></div>
-<div id="hero" class="hero route bg-image">
- 
-  <div class="hero-content display-table">
-    <div class="table-cell">
-      <div class="container">
-        <!-- <p class="display-6 color-d">Hello, world!</p>--->
-        <h1 class="hero-title mb-4">Hi, I'm Olga Sharp</h1>
-        <p class="hero-subtitle"><span class="typed" data-typed-items="Marketing & Communications Leader, Data-driven Product Growth Advisor, Socially Responsible Business Researcher and Advocate"></span></p>
-        
-    <div class="socials">
-      <ul>
-        <li><a href="mailto:olucasharp@gmail.com?subject=Hello!"><span class="ico-circle"><i class="bi bi-google"></i></span></a></li>
-        <li><a href="https://t.me/SharpMarCom"><span class="ico-circle"><i class="bi bi-telegram"></i></span></a></li>
-        <!-- <li><a href="https://github.com/LucaOstra"><span class="ico-circle"><i class="bi bi-github"></i></span></a></li> -->
-        <li><a href="https://www.linkedin.com/in/sharpolga/?original_referer="><span class="ico-circle"><i class="bi bi-linkedin"></i></span></a></li>
-          </ul>
-
+      </nav>
     </div>
-    
-      </div>
-    </div>
-  </div>
-  
-</div><!-- End Hero Section -->
+  </header>
 
-  <!-- ======= About Section ======= -->
-  <section id="about" class="about">
-
-   <!-- ======= About Me ======= -->
-<div class="about-me container">
-  <h4 class="title-a">
-    ABOUT ME
-  </h4>
-  <div class="row">
-    <div class="col-lg-4" data-aos="fade-right">
-      <br>
-      <img src="assets/img/portrait.jpg" class="img-fluid rounded b-shadow-a" alt="">
-    </div>
-    <!-- Change col-lg-8 to col-lg-7 or col-lg-6 -->
-    <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
-      <div class="row">
-       <div class="col-lg-12">
-          <br>
-          <ul>
-            <li><i class="bi bi-chevron-right"></i> <strong>RESUME:</strong><span><a href="#resume" style="color: #e1e1e1"><u>check out here</u></a></span></li>
-             <li><i class="bi bi-chevron-right"></i> <strong>PORTFOLIO:</strong><span><a href="portfolio-details.html" style="color: #e1e1e1"><u>open the page</u></a></span></li>
-          </ul>
-         <p>
-              I bridge the gap between high-level strategy and operational delivery. With 12+ years of experience spanning a global energy leader (ExxonMobil), B2B & EdTech sectors, and my journey as a marketing agency co-founder, I specialize in transforming complex technologies into scalable market-ready products. I find creative, low-resource paths to market leadership where traditional strategies fail.
-<br>
-<br>
-I focus on delivering measurable impact through data-informed decision-making, no-cost creativity, and high-stakes stakeholder engagement. Beyond my core roles, I mentor emerging businesses and professionals, helping them scale their marketing and communications efforts. As an academic researcher, I also explore socially responsible design and disruptive technologies, aiming to advance community well-being and creative problem-solving.
-              </p>
-
-      </div>
-    </div>
-  </div>
-</div><!-- End About Me -->
-
-   <br>
-     <br>  
-</div> 
-<br>
-<br>
-
-<!-- ======= Portfolio Section ======= -->
-<title>Luca Sharp - Detailed Resume</title>
-   
-  <meta name="description"
-    content="Welcome to Luca Sharp website">
-  <meta name="keywords"
-    content="Dataanalytics,Datascience,Artificialrelations,Machinelearning,AI,ML,Socialgood,Aiforsocialgood,Socialdesign,Publicrelations,Data,Dataviz,Datavisualization,ML,Python,Content,Meaning,NeuralNetworks,Classification,Regression,NLP">
-  <meta name="author" content="Olga Luca Sharp">
-  <link rel="icon" href="assets/img/logo.png">
-
-  <!-- Logos -->
-  <link href="assets/img/logomin.png" rel="icon">
-  <link href="assets/img/logo.png" rel="apple-touch-icon">
-
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-
-  <!-- Template Main CSS File -->
-  <link href="assets/css/style.css" rel="stylesheet">
- 
-</head>
-
-<body>
-
-  <div class="hero hero-single route bg-image" style="background-image: url(assets/img/nasa_moon.jpg)">
-    
+  <!-- Hero Section with Particles Background -->
+  <div id="hero" class="hero route bg-image">
+    <!-- Particles container -->
+    <div id="bg"></div>
     <div class="hero-content display-table">
-      <div class="table-cell"> 
-        <div class="container"> 
-           
+      <div class="table-cell">
+        <div class="container">
+          <h1 class="hero-title mb-4" style="font-family: 'Courier New', Courier, monospace !important;">Hi, I'm Olga Sharp</h1>
+          <p class="hero-subtitle";"><span class="typed" data-typed-items="Head of Marketing &amp; Communications, GTM Strategy, Brand Authority Growth, Operations, For Series A/B Ventures, B2B, Tech/DeepTech"></span></p>
+          <div class="socials">
+            <ul>
+              <li><a href="mailto:olucasharp@gmail.com?subject=Hello!"><span class="ico-circle"><i class="bi bi-google"></i></span></a></li>
+              <li><a href="https://t.me/SharpMarCom"><span class="ico-circle"><i class="bi bi-telegram"></i></span></a></li>
+              <li><a href="https://www.linkedin.com/in/sharpolga/"><span class="ico-circle"><i class="bi bi-linkedin"></i></span></a></li>
+            </ul>
           </div>
         </div>
       </div>
     </div>
+  </div>
 
-  <main id="main">
+  <!-- About Section  -->
+  <section id="about" class="about">
+    <div class="about-me container">
+      <h4 class="title-a">ABOUT ME</h4>
+      <div class="row">
+        <div class="col-lg-4" data-aos="fade-right">
+          <br>
+          <img src="assets/img/portrait.jpg" class="img-fluid rounded b-shadow-a" alt="Olga Sharp portrait">
+        </div>
+        <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
+          <div class="row">
+            <div class="col-lg-10">
+              <br>
+              <p>I bridge the gap between high-level strategy and operational delivery. With 12+ years of experience spanning a global energy leader (ExxonMobil), B2B & EdTech sectors, and my journey as a marketing agency co-founder, I specialize in transforming complex technologies into scalable market-ready products. I find creative, low-resource paths to market leadership where traditional strategies fail.
+              <br><br>
+              I focus on delivering measurable impact through data-informed decision-making, no-cost creativity, and high-stakes stakeholder engagement. Beyond my core roles, I mentor emerging businesses and professionals, helping them scale their marketing and communications efforts. As an academic researcher, I also <a href="academic.html"><u>explore socially responsible design and disruptive technologies</u></a>, aiming to advance community well-being and creative problem-solving.
+              <br><br> A selection of projects demonstrating how I build, scale, and lead marketing functions: 
+              <br><br>
+              <a href="portfolio-details.html" class="btn-portfolio">View portfolio →</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br><br>
+  </section>
 
-  
-  <!-- ======= Resume Section ======= -->
+  <!-- Core Expertise Section - Now with SANS SERIF -->
   <section id="resume" class="resume">
     <div class="container">
-
-<h4 class="title-a">
-   Professional Experience
-  </h4>
       <div class="row">
         <div class="col-lg-10">
-          <h3 class="resume-title">SUMMARY</h3>
+          <h3 class="resume-title">CORE EXPERTISE</h3>
           <div class="resume-item pb-0">
-            
-            <p>I bridge the gap between high-level strategy and operational delivery. With 12+ years of experience across global energy leader (ExxonMobil), EdTech, B2B, and my journey as a marketing agency co-founder, I specialize in translating complex products into high-growth engines. I find creative, low-resource paths to market leadership where traditional strategies fail.</p>
-
-<p><strong>CORE EXPERTISE:</strong></p>
-
-<ul>
-  <li><strong>Operations &amp; Project Management:</strong> organizing cross-functional workflows and building high-performing remote teams with a focus on operational excellence, risk mitigation, and scalability to maximize ROI.</li>
-  <li><strong>Product Marketing &amp; Content Strategy:</strong> building high-authority omnichannel ecosystems, including UGC, influencer marketing networks, corporate digital platforms, and content production to drive organic growth and brand integrity.</li>
-  <li><strong>Strategic Partnerships &amp; Growth:</strong> executing non-linear growth projects and alliances that leverage social capital and community engagement to scale without high ad spend.</li>
-  <li><strong>GTM Strategy &amp; Data Analytics:</strong> delivering data-backed GTM roadmaps and market research to decode consumer behavior, validate product hypotheses, and ensure measurable revenue growth.</li>
-</ul>
-
-<p>Additionally, as an academic researcher, I explore the intersection of disruptive tech and social design, helping businesses build market resilience and trust equity through precision intelligence.</p></p>
-            <p>
-
-            </p>
-          </div>
-
-          <p></p>
+            <ul>
+              <li><strong>Strategic Communications & Brand Management:</strong> Reputation management, executive thought leadership, brand trust equity</li>
+              <li><strong>GTM Strategy & Market Intelligence:</strong> Multi‑channel frameworks, market research, competitive analysis, GTM, ICP, CustDev</li>
+              <li><strong>Growth & Omnichannel Marketing:</strong> Full‑funnel optimization (AAARRR), performance, high‑stakes partnerships, non-linear growth projects without high ad spend</li>
+              <li><strong>Marketing Operations & Leadership:</strong> Scalable workflows, LTV/CAC modeling, KPI dashboards, remote team management</li>
+            </ul>
           </div>
         </div>
-        
-        <div class="col-lg-10">
-          <h3 class="resume-title">PROFESSIONAL EXPERIENCE</h3>
-          <div class="resume-item">
-            <h4>Product Director, Marketing operations, Partner</h4>
-            <h5>01.2021 - current</h5>
-            <p><em>Heat Lead, RU, CY</em></p>
-            <p>
-              
-             Led global influencer marketing, branding, and performance campaigns for 6 clients across EdTech, HealthTech, e-commerce, and app development, delivering XXM+ in audience reach and XXK+ leads for B2C clients. Built and managed a remote, high-performing team of 12, ensuring seamless background operations. Orchestrated funnel strategies—from positioning and messaging to conversion rate optimization and A/B testing—to maximize ROI and align with client goals.
-            <!-- <ul>
-              <li> </li>
-              <li>  </li>
-              <li> </li>
-              <li> </li>
-            </ul>-->
-            </p>
-          </div>
-          <div class="resume-item">
-            <h4>PR and Marketing Lead</h4>
-            <h5>01.2023 - 11.2024</h5>
-            <p><em>National Research University Moscow Institute of Physics and Technology</em></p>
-            <p>Spearheaded PR, product marketing, and brand campaigns, doubling leads and generating $XM revenue through targeted strategies, federal PR initiatives, and targeted events. Owned corporate website growth, achieving X2 monthly traffic increases.</p>
-           <!-- <ul>
-              <li> </li>
-              <li>  </li>
-              <li> </li>
-              <li> </li>
-            </ul>-->
-            </p>
-          </div>
-
-
-          <div class="resume-item">
-            <h4>Public and Government Relations</h4>
-            <h5>08.2018 - 07.2022</h5>
-            <p><em>ExxonMobil, Moscow, RU</em></p>
-            <p>Led corporate communications, advocacy, and CSR programs, aligning 200+ marketing campaigns with global brand positioning and managing a $XXXk+ budget. Led government relations, and executive communications, protecting corporate reputation.</p>
-           <!-- <ul>
-              <li> </li>
-              <li>  </li>
-              <li> </li>
-              <li> </li>
-            </ul>-->
-            </p>
-          </div>
-          <div class="resume-item">
-            <h4>Key Account Manager, Business Development</h4>
-            <h5>08.2016 - 08.2018</h5>
-            <p><em>Intermark Relocation, Moscow, RU</em></p>
-            <p>Negotiated corporate service agreements for large enterprise corporations, increasing client profitability by 30% and improving support efficiency by 15% through CRM integration</p>
-          </div>
-
-          <div class="resume-item">
-            <h4>Researcher</h4>
-            <h5>2009 - 2016</h5>
-  
-            <p>Led end-to-end socio-political studies, including statistical data analysis (SPSS), to inform policy and business strategies
-            </p>
-          </div>
-
-          <h3 class="resume-title">EDUCATION</h3>
-       <div class="resume-item">
-           <h4>Bauman Moscow State Technical University</h4>
-            <h5>2022</h5>
-            <p><em>Advanced Data Analytics</em></p>
-            <p></p>
-          </div> -->
-          <div class="resume-item">
-            <h4>National Research University - Higher School of Economics</h4>
-            <h5>2012 - 2019</h5>
-            <p><em>ABD, Communications, Media and Design</em></p>
-            <p>Explored different aspects and history of the emerging field of a socially responsible design and responsible project management.</p>
-          </div>
-          <div class="resume-item">
-            <h4>National Research University - Higher School of Economics</h4>
-            <h5>2005 - 2011</h5>
-            <p><em>Master of Science</em></p>
-            <p>Explored factors of economic and political behavioral attitudes of people and its cultural roots.</p>
-          </div>
-  
       </div>
-
     </div>
-    <br>
-    <br>
-  </section><!-- End Resume Section -->
+  </section>
 
- <!-- ======= SKILLS ======= -->
-       <div class="interests container">
-
-        <div class="section-title">
-          <h2>SKILLS</h2>
-        </div>
-  <br>
-        <div class="row">
-          <div class="col-lg-3 col-md-4">
-            <div class="icon-box">
-              <i class="ri-store-line" style="color: maroon;"></i>
-              <h3>Strategic communications</h3>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
-            <div class="icon-box">
-              <i class="ri-bar-chart-box-line" style="color: maroon;"></i>
-              <h3>Public relations</h3>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
-            <div class="icon-box">
-              <i class="ri-calendar-todo-line" style="color: maroon;"></i>
-              <h3>Content management</h3>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-4 mt-4 mt-lg-0">
-            <div class="icon-box">
-              <i class="ri-paint-brush-line" style="color: maroon;"></i>
-              <h3>Performance-marketing</h3>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-4 mt-4">
-            <div class="icon-box">
-              <i class="ri-database-2-line" style="color: maroon;"></i>
-              <h3>Market research</h3>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-4 mt-4">
-            <div class="icon-box">
-              <i class="ri-gradienter-line" style="color: maroon;"></i>
-              <h3>Brand Development</h3>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-4 mt-4">
-            <div class="icon-box">
-              <i class="ri-file-list-3-line" style="color: #11dbcf;"></i>
-              <h3>Marketing analytics</h3>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-4 mt-4">
-            <div class="icon-box">
-              <i class="ri-price-tag-2-line" style="color: #4233ff;"></i>
-              <h3>Marketing strategy</h3>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-4 mt-4">
-            <div class="icon-box">
-              <i class="ri-fingerprint-line" style="color: #29cc61;"></i>
-              <h3>Special projects</h3>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-4 mt-4">
-            <div class="icon-box">
-              <i class="ri-anchor-line" style="color: #b2904f;"></i>
-              <h3>Team management</h3>  
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-4 mt-4">
-            <div class="icon-box">
-              <i class="ri-disc-line" style="color: #b20969;"></i>
-              <h3>Budget management</h3>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-4 mt-4">
-            <div class="icon-box">
-              <i class="ri-base-station-line" style="color: #ff5828;"></i>
-              <h3>Storytelling</h3>
-            </div>
-          </div>
-
-        </div>
-  
-      </div><!-- End Interests -->
-  
-    </section>
-    
-    <!-- End About Section -->
-                
-<!-- ======= Contact Section ======= -->
-<section id="contact"></section>
-
-    <section id="contact" class="paralax-mf footer-paralax bg-image sect-mt4 route" style="background-image: url(assets/img/nasa_moon.jpg)">
-      <div class="container">
-        <div class="row">
-         
-          <div class="col-lg-8" >
-            <div class="contact-mf" style = "background-color: transparent; font-family:'Courier New', Courier, monospace" >
-              
-                <div class="row">
-
-                  <div class="col-lg-8 pt-4 pt-lg-0 content">
-                    <div class="title-box-2 pt-4 pt-md-0">
-                      <h3 class="title-left">
-                        Contact me
-                      </h3>                    
-                    </div>
-                                      
-                    <div class="more-info">
-                      <p style="color: #e1e1e1">
-                      Reach out for an advice, consultation, mentorship or collaboration opportunity
-                      </p>
-                      <ul class="list-ico" style="color: #e1e1e17a">
-                        <li><span class="bi bi-geo-alt"></span>@SharpMarCom</li>
-                        <li><span class="bi bi-phone"></span> +(506) 7127-1280</li>
-                        <li><span class="bi bi-envelope"></span> olucasharp@gmail.com</li>
-                      </ul>
-                    </div>
-                    <div class="socials">
-                      <ul>
-                        <li><a href="mailto:olucasharp@gmail.com?subject=Hello!"><span class="ico-circle"><i class="bi bi-google"></i></span></a></li>
-                        <li><a href="https://t.me/SharpMarCom"><span class="ico-circle"><i class="bi bi-telegram"></i></span></a></li>
-                        <!-- <li><a href="https://github.com/LucaOstra"><span class="ico-circle"><i class="bi bi-github"></i></span></a></li>-->
-                        <li><a href="https://www.linkedin.com/in/sharpolga"><span class="ico-circle"><i class="bi bi-linkedin"></i></span></a></li>
-                      </ul>
-                    </div>
-                  </div>
+  <!-- Contact Section -->
+  <section id="contact" class="paralax-mf footer-paralax bg-image sect-mt4 route" style="background-image: url(assets/img/nasa_moon.jpg);">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8">
+          <div class="contact-mf" style="background-color: transparent;">
+            <div class="row">
+              <div class="col-lg-8 pt-4 pt-lg-0 content">
+                <div class="title-box-2 pt-4 pt-md-0">
+                  <h3 class="title-left">Contact me</h3>                    
+                </div>
+                <div class="more-info">
+                  <p>If you're building a marketing function, let's connect!</p>
+                  <ul class="list-ico">
+                    <li><span class="bi bi-geo-alt"></span> @SharpMarCom</li>
+                    <li><span class="bi bi-phone"></span> +(506) 7127-1280</li>
+                    <li><span class="bi bi-envelope"></span> olucasharp@gmail.com</li>
+                  </ul>
+                </div>
+                <div class="socials">
+                  <ul>
+                    <li><a href="mailto:olucasharp@gmail.com?subject=Hello!"><span class="ico-circle"><i class="bi bi-google"></i></span></a></li>
+                    <li><a href="https://t.me/SharpMarCom"><span class="ico-circle"><i class="bi bi-telegram"></i></span></a></li>
+                    <li><a href="https://www.linkedin.com/in/sharpolga/"><span class="ico-circle"><i class="bi bi-linkedin"></i></span></a></li>
+                  </ul>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </section>
-          
-<!-- End Contact Section -->
+    </div>
+  </section>
 
-  </main>
- 
-<!-- End #main -->
-
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="copyright-box">
+            <p class="copyright">&copy; Copyright <strong>Olga Sharp</strong>. All Rights Reserved</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
 
   <div id="preloader"></div>
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
-  <!-- Vendor JS Files -->
+  <!-- Vendor JS -->
   <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
@@ -457,37 +259,100 @@ I focus on delivering measurable impact through data-informed decision-making, n
   <script src="assets/vendor/typed.js/typed.min.js"></script>
   <script src="assets/vendor/php-email-form/validate.js"></script>
 
-  <!-- Template Main JS File -->
+  <!-- Main JS -->
   <script src="assets/js/main.js"></script>
-  <script type="text/javascript" src="assets/js/custom.js"></script>
-  <script type="text/javascript" src="assets/js/particles.min.js"></script>
+  
+  <!-- Particles JS -->
+  <script src="assets/js/particles.min.js"></script>
   <script src="assets/js/custom.js"></script>
-  <script src="jassets/js/particles.min.js"></script>
-    <!-- scripts -->
-   
+  
+  <!-- Particles initialization -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      if (typeof particlesJS !== 'undefined' && !window.particlesInitialized) {
+        if (document.getElementById('bg') && !document.getElementById('bg').hasChildNodes()) {
+          particlesJS('bg', {
+            "particles": {
+              "number": {
+                "value": 80,
+                "density": {
+                  "enable": true,
+                  "value_area": 800
+                }
+              },
+              "color": {
+                "value": "#ffffff"
+              },
+              "shape": {
+                "type": "circle",
+                "stroke": {
+                  "width": 0,
+                  "color": "#000000"
+                }
+              },
+              "opacity": {
+                "value": 0.5,
+                "random": true,
+                "anim": {
+                  "enable": false
+                }
+              },
+              "size": {
+                "value": 3,
+                "random": true,
+                "anim": {
+                  "enable": false
+                }
+              },
+              "line_linked": {
+                "enable": true,
+                "distance": 150,
+                "color": "#ffffff",
+                "opacity": 0.4,
+                "width": 1
+              },
+              "move": {
+                "enable": true,
+                "speed": 2,
+                "direction": "none",
+                "random": false,
+                "straight": false,
+                "out_mode": "out",
+                "bounce": false,
+                "attract": {
+                  "enable": false
+                }
+              }
+            },
+            "interactivity": {
+              "detect_on": "canvas",
+              "events": {
+                "onhover": {
+                  "enable": true,
+                  "mode": "repulse"
+                },
+                "onclick": {
+                  "enable": true,
+                  "mode": "push"
+                },
+                "resize": true
+              },
+              "modes": {
+                "repulse": {
+                  "distance": 100,
+                  "duration": 0.4
+                },
+                "push": {
+                  "particles_nb": 4
+                }
+              }
+            },
+            "retina_detect": true
+          });
+          window.particlesInitialized = true;
+        }
+      }
+    });
+  </script>
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
